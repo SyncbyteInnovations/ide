@@ -1,0 +1,42 @@
+package ids.employeeat;
+
+public class JsonTag {
+    public final static String PERSON = "person";
+    public static final String DEVICE_LOG_INFO = "deviceLogInfo";
+    public static final String LEAVE_TXN_INFO = "LeaveTxnInfo";
+    public static final String ERROR_MSG = "errorMsg";
+    public static final String PERSON_ID = "personId";
+    public static final String FROM_DATE = "fromDate";
+    public static final String TO_DATE = "toDate";
+    public static final String ID = "id";
+    public static final String NAME = "name";
+    public static final String LEAVE_DURATION = "leaveDuration";
+    public static final String LEAVE_TYPE = "leaveType";
+    public static final String LEAVE_REASON = "leaveReason";
+    public static final String YEAR_ASSIGNMENT = "yearAssignment";
+    public static final String DEFAULT_ERROR = "defaultError";
+    public static final String ERROR = "error";
+    public static final String UPDATED_ID = "updateId";
+    public static final String YEAR_ASSIGNMENT_ID = "yearAssignmentId";
+    public static final String IS_MANUAL = "isManual";
+    public static final String VERIFICATION_MODE = "verificationMode";
+    public static final String DESCRIPTION = "description";
+    public static final String LOG_DATE = "logDate";
+    public static final String PUNCH_STATUS = "punchStatus";
+    public static final String DEVICE_LOG_INFO_LIST = "deviceLogInfoList";
+    public static final String TIME_ZONE_NAME = "timeZoneName";
+    public static final String TIME_ZONE_OFFSET = "timeZoneOffset";
+    public static final String LAT = "lat";
+    public static final String LON = "lon";
+    public static final String LOG_TYPE = "logType";
+    public static final String PUNCH_STATUS_ID = "punchStatusId";
+    public static final String LOG_COUNT = "logCount";
+    public static final String PERSON_CODE = "personCode";
+    public static final String REASON = "reason";
+    public static final String SANCTION_BY  = "sanctionBy";
+    public static final String AUTHORISE_BY = "authoriseBy";
+    public static final String LEAVE_STATUS_ID ="leaveStatusId";
+    public static final String LEAVE_STATUS_NAME ="leaveStatusName";
+    public static final String IS_SANCTIONED ="isSanctioned";
+    public static final String IS_AUTHORISED ="isAuthorised";
+}

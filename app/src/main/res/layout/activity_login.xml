@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/login_bg"
+        android:contentDescription="@string/desc_login_bg"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:alpha=".7"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/desc_login_bg"/>
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/klavika_bold"
+        android:text="@string/lbl_login_welcome"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_60"/>
+
+    <View
+        android:id="@+id/dash"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dash"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/klavika_regular_plain"
+        android:text="@string/lbl_sign_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_20"/>
+
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/pwd"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:inputType="text"
+        android:drawablePadding="10dp"
+        android:maxLines="1"
+        android:drawableStart="@drawable/ic_white_user"
+        android:hint="@string/user"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/url"
+        android:layout_marginEnd="50dp"
+        android:maxLines="1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_white_pwd"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:maxLines="1"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_white_url"
+        android:hint="@string/url"
+        android:inputType="textUri"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/disclaimer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/circle_button"
+        android:contentDescription="@string/desc_login"
+        android:onClick="login"
+        android:src="@drawable/ic_teal_light_right_arrow"/>
+
+    <TextView
+        android:id="@+id/disclaimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/klavika_regular"
+        android:text="@string/lbl_copy_right"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_15"/>
+
+
+</RelativeLayout>

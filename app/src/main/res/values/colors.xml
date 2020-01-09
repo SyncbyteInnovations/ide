@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232858</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#61E3B5</color>
+    <color name="light_green">#61E3B5</color>
+    <color name="resideMenuBg">#FFF</color>
+    <color name="menu_header_title">#A2A4A8</color>
+    <color name="white">#FFF</color>
+    <color name="dark_gray">#53636C</color>
+    <color name="light_gray">#A2A4A8</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+</resources>

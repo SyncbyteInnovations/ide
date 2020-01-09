@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="menu_titles_icons">
+        <item>@drawable/ic_menu_dashboard</item>
+        <item>@drawable/ic_menu_on_duty</item>
+        <item>@drawable/ic_menu_leave</item>
+        <item>@drawable/ic_menu_holiday</item>
+        <item>@drawable/ic_menu_attendance</item>
+    </array>
+    <array name="menu_attendance_titles_icons">
+        <item>@drawable/ic_menu_attendance_regularization</item>
+        <item>@drawable/ic_menu_attendance_info</item>
+        <item>@drawable/ic_menu_swipe_details</item>
+        <item>@drawable/ic_menu_shift_roaster</item>
+    </array>
+
+    <array name="menu_holiday_titles_icons">
+        <item>@drawable/ic_menu_holiday_info</item>
+    </array>
+</resources>

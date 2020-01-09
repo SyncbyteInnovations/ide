@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_leave_assignment_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/year" />
+
+        <Spinner
+            android:id="@+id/s_leave_assignment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_leave_assignment_label"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+        </Spinner>
+
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/et_remarks"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et_round_btn"
+            android:text="@string/apply"
+            android:textColor="@color/dark_gray" />
+
+        <EditText
+            android:id="@+id/et_remarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_from_date"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_remarks"
+            android:drawablePadding="10dp"
+            android:hint="@string/remarks"
+            android:inputType="text"
+            android:maxLength="150"
+            android:textSize="15sp"
+            android:theme="@style/et_black" />
+
+        <TextView
+            android:id="@+id/tv_sanction_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_leave_assignment"
+            android:layout_marginTop="20dp"
+            android:text="@string/sanction_by" />
+
+
+        <Spinner
+            android:id="@+id/s_sanction"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sanction_label"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_approve_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_leave_assignment"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/approve_by" />
+
+        <Spinner
+            android:id="@+id/s_authorise"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_approve_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_leave_duration_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_authorise"
+            android:layout_marginTop="20dp"
+            android:text="@string/leave_duration" />
+
+
+        <Spinner
+            android:id="@+id/s_leave_duration"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_leave_duration_label"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_leave_type_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_authorise"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/leave_type" />
+
+        <Spinner
+            android:id="@+id/s_leave_type"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_leave_type_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:gravity="start">
+
+        </Spinner>
+
+
+        <TextView
+            android:id="@+id/tv_from_date_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_leave_duration"
+            android:layout_marginTop="20dp"
+            android:text="@string/from" />
+
+        <TextView
+            android:id="@+id/tv_from_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_from_date_label"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_clock_dark_gray"
+            android:drawablePadding="10dp"
+            android:paddingStart="8dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_to_date_label"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_leave_duration"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/to" />
+
+        <TextView
+            android:id="@+id/tv_to_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_to_date_label"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_clock_dark_gray"
+            android:drawablePadding="10dp"
+            android:paddingStart="8dp"
+            android:textColor="@color/dark_gray"
+            android:textSize="15sp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

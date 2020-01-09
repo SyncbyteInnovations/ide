@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_month_label"
+        android:layout_width="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/month"/>
+
+    <Spinner
+        android:id="@+id/s_month"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tv_month_label"
+        android:dropDownWidth="100dp"/>
+
+    <TextView
+        android:id="@+id/tv_year_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_month_label"
+        android:text="@string/year"/>
+
+    <Spinner
+        android:id="@+id/s_year"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_year_label"
+        android:layout_toEndOf="@id/s_month"/>
+</RelativeLayout>

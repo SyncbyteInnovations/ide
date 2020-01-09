@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextClock
+        android:id="@+id/tc_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-bold"
+        android:format24Hour="h:mm a"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"/>
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:id="@+id/btn_filter_date"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitEnd"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_filter_date"/>
+
+</RelativeLayout>
