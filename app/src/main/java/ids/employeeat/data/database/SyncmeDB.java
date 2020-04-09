@@ -38,7 +38,7 @@ public abstract class SyncmeDB extends RoomDatabase {
                 if (INSTANCE == null)
                 {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            SyncmeDB.class, "syncme_database")
+                            SyncmeDB.class, "synctime_database")
                             .addCallback(sRoomDatabaseCallback)
                             .build();
                 }
@@ -78,6 +78,8 @@ public abstract class SyncmeDB extends RoomDatabase {
                 menuDao.insert(new MenuInfo(103, "Holiday", 0, "Holiday", 4, 3));
                 menuDao.insert(new MenuInfo(104, "Attendance", 0, "Attendance", 5, 3));
                 menuDao.insert(new MenuInfo(105, "Team", 0, "Team", 5, 3));
+                menuDao.insert(new MenuInfo(106, "Device", 0, "Device Management", 6, 3));
+                menuDao.insert(new MenuInfo(107, "UserManage", 0, "User Management", 7, 3));
 
                 menuDao.insert(new MenuInfo(102101, "LeaveEntry", 0, "Apply Leave", 3, 102));
                 menuDao.insert(new MenuInfo(102102, "CompOffEntry", 0, "Apply Comp Off", 3, 102));
@@ -89,6 +91,9 @@ public abstract class SyncmeDB extends RoomDatabase {
                 menuDao.insert(new MenuInfo(104103, "AttendanceInfo", 0, "Attendance Info", 5, 104));
                 menuDao.insert(new MenuInfo(104104, "SwipeDetails", 0, "Swipe Details", 5, 104));
                 menuDao.insert(new MenuInfo(104105, "ShiftRoaster", 0, "Shift Roaster", 5, 104));
+                menuDao.insert(new MenuInfo(106101, "BluetoothSetting", 0, "Bluetooth Setting", 6, 106));
+                menuDao.insert(new MenuInfo(106102, "WifiSetting", 0, "Wifi Setting", 6, 106));
+                menuDao.insert(new MenuInfo(106103, "BindSetting", 0, "Attendance Binding", 6, 106));
             }
             return null;
         }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Employee @</string>
+    <string name="app_name">Synctime</string>
     <string name="no_data_found">No Data Found</string>
     <string name="data_backed_up_successfully">Data Backed Up Successfully</string>
     <string name="desc_left_menu_drawer">left menu drawer</string>
@@ -33,6 +33,16 @@
     <string name="manual_entry">Manual Entry</string>
     <string name="remarks">Remarks</string>
     <string name="apply">Apply</string>
+    <string name="connect_wifi">Connect Wifi</string>
+    <string name="connect_device">Connect Device</string>
+    <string name="register">Register</string>
+    <string name="serial_number_info">Please enter serial number of device</string>
+    <string name="bind_deice_info">Please set host and port to bind device</string>
+    <string name="wifi_info">Please select wifi</string>
+    <string name="user_manage_info">Enter username for registeration</string>
+    <string name="set_host_port">HOST:PORT</string>
+    <string name="bind">Bind</string>
+    <string name="host">Set Host</string>
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="override_time_zone">Override Time Zone</string>
@@ -44,7 +54,7 @@
     <string name="password">Password</string>
     <string name="url">URL</string>
     <string name="desc_login">login</string>
-    <string name="lbl_copy_right">Idspire \u00A9 2017</string>
+    <string name="lbl_copy_right">Synctime \u00A9 2019</string>
     <string name="server_unreachable">invalid url or unreachable, please try again</string>
     <string name="fields_mandatory">All fields are mandatory</string>
     <string name="from_date_cannot_be_greater_than_to_date">From Date Cannot Be Greater Than To Date</string>
@@ -76,6 +86,10 @@
     <string name="public_holiday">Public Holiday</string>
     <string name="month">Month</string>
     <string name="year">Year</string>
+    <string name="serialnumber">Serial Number</string>
+    <string name="username_register">User Name</string>
+    <string name="username_id">User Id</string>
+    <string name="hostname">Hostname:Pot</string>
     <string name="approver">Approver</string>
     <string name="method_not_allowed">Method not allowed</string>
     <string name="address">Address</string>
@@ -84,6 +98,10 @@
     <string name="you_have_checked_in_today">You have Checked in today</string>
     <string name="you_have_checked_out_today">You have Checked out today</string>
     <string name="times">times</string>
+    <string name="register_user">Register User</string>
+    <string name="bluetooth_setup">Setup Bluetooth</string>
+    <string name="wifi_setup">Setup Wifi</string>
+    <string name="device_bind">Bind Device</string>
     <string-array name="month_array">
         <item>Jan</item>
         <item>Feb</item>

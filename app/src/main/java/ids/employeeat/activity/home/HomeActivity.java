@@ -205,6 +205,14 @@ public class HomeActivity extends AppActivity implements HomeInterface, Reside.M
                 {
                     packageName = packageName.concat("holiday").concat(".");
                 }
+                else if (masterMenu.getMasterId() == AppConstant.CON_MENU_DEVICE_ID)
+                {
+                    packageName = packageName.concat("device").concat(".");
+                }
+                else if (masterMenu.getMasterId() == AppConstant.CON_MENU_USER_MANAGE_ID)
+                {
+                    packageName = packageName.concat("usermanage").concat(".");
+                }
                 packageName = packageName.concat(className.substring(0, 1).toLowerCase().concat(className.substring(1, className.length())));
 
                 String classPath = packageName.concat(".").concat(className + "Fragment");
@@ -216,7 +224,10 @@ public class HomeActivity extends AppActivity implements HomeInterface, Reside.M
             }
             if (masterMenu.getId() == AppConstant.CON_MENU_DASHBOARD_ID || masterMenu.getId() == AppConstant.CON_MENU_ATTENDANCE_MANUAL_ENTRY
                     || masterMenu.getId() == AppConstant.CON_MENU_OUTDOOR_ENTRY || masterMenu.getId() == AppConstant.CON_MENU_LEAVE_ENTRY
-                    || masterMenu.getId() == AppConstant.CON_MENU_COMP_OFF_ENTRY)
+                    || masterMenu.getId() == AppConstant.CON_MENU_COMP_OFF_ENTRY || masterMenu.getId() == AppConstant.CON_MENU_USER_MANAGE_ID
+                    || masterMenu.getId() == AppConstant.CON_MENU_DEVICE_BLUETOOTH_ID  || masterMenu.getId() == AppConstant.CON_MENU_DEVICE_USER_BIND_ID || masterMenu.getId() == AppConstant.CON_MENU_DEVICE_WIFI_ID
+                    || masterMenu.getId() == AppConstant.CON_MENU_DEVICE_ID
+            )
             {
                 setViewDashboard();
             }

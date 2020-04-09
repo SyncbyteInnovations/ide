@@ -16,9 +16,9 @@
         android:background="@android:color/transparent"
         android:src="@drawable/ic_logout"/>
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageView
         android:id="@+id/user_profile_photo"
-        android:layout_width="80dp"
+        android:layout_width="160dp"
         android:layout_height="80dp"
         android:src="@drawable/profile"/>
 

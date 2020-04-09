@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="5dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:text="@string/serial_number_info"
+            />
+
+        <EditText
+            android:id="@+id/serialnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/ic_remarks"
+            android:drawablePadding="10dp"
+            android:hint="@string/serialnumber"
+            android:inputType="text"
+            android:maxLength="150"
+            android:textSize="15sp"
+            android:theme="@style/et_black" />
+
+        <Button
+            android:id="@+id/btn_connect_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et_round_btn"
+            android:text="@string/connect_device"
+            android:textColor="@color/dark_gray" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

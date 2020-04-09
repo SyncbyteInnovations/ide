@@ -24,6 +24,8 @@ public class Theme
                         break;
                     case AppConstant.CON_MENU_PUNCH_ID:
                         layoutId = R.layout.fragment_punch;
+                    case AppConstant.CON_MENU_DEVICE_ID:
+                        layoutId = R.layout.fragment_device;
                 }
         }
         return layoutId;

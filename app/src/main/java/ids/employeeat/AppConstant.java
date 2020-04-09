@@ -14,11 +14,17 @@ public class AppConstant {
     public static final int CON_MENU_HOLIDAY_ID = 103;
     public static final int CON_MENU_ATTENDANCE_ID = 104;
     public static final int CON_MENU_PUNCH_ID = 105;
+    public static final int CON_MENU_DEVICE_ID = 106;
+    public static final int CON_MENU_USER_MANAGE_ID = 107;
 
     public static final int CON_MENU_ATTENDANCE_MANUAL_ENTRY = 105101;
     public static final int CON_MENU_OUTDOOR_ENTRY = 102101;
     public static final int CON_MENU_LEAVE_ENTRY = 103101;
     public static final int CON_MENU_COMP_OFF_ENTRY = 103102;
+
+    public static final int CON_MENU_DEVICE_BLUETOOTH_ID = 106101;
+    public static final int CON_MENU_DEVICE_WIFI_ID = 106102;
+    public static final int CON_MENU_DEVICE_USER_BIND_ID = 106103;
 
     public static final String TAG_PERSON_ID = "personId";
     public static final String TAG_COMP_OFF = "compOff";
